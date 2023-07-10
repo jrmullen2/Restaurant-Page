@@ -17,12 +17,9 @@ const locationContainer = document.createElement("div");
 const locationTitle = document.createElement("h3");
 const address = document.createElement("div");
 
-headingContainer.appendChild(homeTitle);
 review.textContent =
   "RPG Café is the best role-playing café around! Not only is their food and service great, but also the staff are committed to playing their roles. Definitely a place I will come back to!";
 customer.textContent = "Frodo";
-reviewContainer.appendChild(review);
-reviewContainer.appendChild(customer);
 hours.textContent = "Hours";
 monday.textContent = "Monday: 10am - 9pm";
 tuesday.textContent = "Tuesday 10am - 9pm";
@@ -33,6 +30,27 @@ saturday.textContent = "Saturday 10am - 11pm";
 sunday.textContent = "Sunday 10am - 9pm";
 locationTitle.textContent = "Location";
 address.textContent = "222 Sorcerer Drive, Lothric, California";
+
+headingContainer.id = "headingContainer";
+reviewContainer.id = "reviewContainer";
+review.id = "review";
+customer.id = "customer";
+hoursContainer.id = "hoursContainer";
+hours.id = "hours";
+monday.classList.add("day");
+tuesday.classList.add("day");
+wednesday.classList.add("day");
+thursday.classList.add("day");
+friday.classList.add("day");
+saturday.classList.add("day");
+sunday.classList.add("day");
+locationContainer.id = "locationContainer";
+locationTitle.id = "location";
+address.id = "address";
+
+headingContainer.appendChild(homeTitle);
+reviewContainer.appendChild(review);
+reviewContainer.appendChild(customer);
 hoursContainer.appendChild(hours);
 hoursContainer.appendChild(monday);
 hoursContainer.appendChild(tuesday);
