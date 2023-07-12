@@ -1,8 +1,12 @@
+import knight from "./images/knight.png";
+
 export function home() {
   const content = document.getElementById("content");
   const headingContainer = document.createElement("div");
   const heading = document.createElement("div");
   const homeTitle = document.createElement("h1");
+  const decoration1 = document.createElement("img");
+  const decoration2 = document.createElement("img");
   const reviewOuterContainer = document.createElement("div");
   const reviewInnerContainer = document.createElement("div");
   const review = document.createElement("div");
@@ -23,6 +27,10 @@ export function home() {
   const address = document.createElement("div");
 
   homeTitle.textContent = "Home";
+  decoration1.src = knight;
+  decoration1.alt = "knight";
+  decoration2.src = knight;
+  decoration2.alt = "knight";
   review.textContent =
     "RPG Café is the best role-playing café around! Not only is their food and service great, but also the staff are committed to playing their roles. Definitely a place I will come back to!";
   customer.textContent = "Frodo";
@@ -39,6 +47,9 @@ export function home() {
 
   headingContainer.classList.add("outer");
   heading.classList.add("inner");
+  heading.classList.add("header");
+  decoration1.classList.add("d1");
+  decoration2.classList.add("d2");
   reviewOuterContainer.classList.add("outer");
   reviewInnerContainer.classList.add("inner");
   review.id = "review";
@@ -58,7 +69,9 @@ export function home() {
   locationTitle.id = "location";
   address.id = "address";
 
+  heading.appendChild(decoration1);
   heading.appendChild(homeTitle);
+  heading.appendChild(decoration2);
   headingContainer.appendChild(heading);
   reviewInnerContainer.appendChild(review);
   reviewInnerContainer.appendChild(customer);
