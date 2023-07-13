@@ -4,38 +4,51 @@ import { contact } from "./contact";
 import "./style.css";
 
 const content = document.getElementById("content");
-const top = document.createElement("div");
-top.id = "top";
-const homeButton = document.createElement("button");
-const menuButton = document.createElement("button");
-const contactButton = document.createElement("button");
+const hContainer = document.getElementById("hContainer");
+const mContainer = document.getElementById("mContainer");
+const cContainer = document.getElementById("cContainer");
+const homeButton = document.getElementById("home");
+const menuButton = document.getElementById("menu");
+const contactButton = document.getElementById("contact");
 
-homeButton.textContent = "Home";
-menuButton.textContent = "Menu";
-contactButton.textContent = "Contact";
-
+//default page behavior
 home();
+activeColor(hContainer);
+
 homeButton.addEventListener("click", () => {
   removeChildren(content);
   home();
+  colorDefault(mContainer);
+  colorDefault(cContainer);
+  activeColor(hContainer);
 });
 menuButton.addEventListener("click", () => {
   removeChildren(content);
   menu();
+  colorDefault(hContainer);
+  colorDefault(cContainer);
+  activeColor(mContainer);
 });
 contactButton.addEventListener("click", () => {
   removeChildren(content);
   contact();
+  colorDefault(hContainer);
+  colorDefault(mContainer);
+  activeColor(cContainer);
 });
-
-top.appendChild(homeButton);
-top.appendChild(menuButton);
-top.appendChild(contactButton);
-document.body.insertAdjacentElement("afterbegin", top);
 
 function removeChildren(parent) {
   while (parent.firstElementChild) {
     parent.removeChild(parent.firstElementChild);
   }
 }
-//Make home the default display for content and make sure top is on top of content
+//sets other buttons back to original color
+function colorDefault(container) {
+  container.style.backgroundColor = "lavender";
+  container.style.color = "black";
+}
+//changes active button
+function activeColor(container) {
+  container.style.backgroundColor = "crimson";
+  container.style.color = "white";
+}
