@@ -35,7 +35,6 @@ export function menu() {
   const b2Descrip = document.createElement("p");
   const b2Price = document.createElement("p");
   const b2Image = document.createElement("img");
-
   const sides = document.createElement("div");
   const sTitleOuter = document.createElement("div");
   const sTitleInner = document.createElement("div");
@@ -52,7 +51,6 @@ export function menu() {
   const s2Descrip = document.createElement("p");
   const s2Price = document.createElement("p");
   const s2Image = document.createElement("img");
-
   const entrées = document.createElement("div");
   const eTitleOuter = document.createElement("div");
   const eTitleInner = document.createElement("div");
@@ -116,7 +114,7 @@ export function menu() {
   decoration2.alt = "Potion";
   b1Name.textContent = "Potion Madness";
   b1Descrip.textContent =
-    "A delectable, warm drink said to be made by wizards. It is said that one sip pf this potion will bring a smile to your face.";
+    "A delectable, warm drink said to be made by wizards. It is said that one sip of this potion will bring a smile to your face.";
   b1Price.textContent = "$3.99";
   b1Image.src = cape;
   b1Image.alt = "Potion Madness";
@@ -152,7 +150,7 @@ export function menu() {
   e2Image.alt = "Orcs' Platter";
   e3Name.textContent = "Demon Scorchin Skillet";
   e3Descrip.textContent =
-    "Eggs, spinach, scorching demon sauce, and mushrooms all in one sizzling hot skillet! *Ingredients can be added for additional charge. Please talk to your server";
+    "Eggs, spinach, scorching demon sauce, and mushrooms all in one sizzling hot skillet! *Ingredients can be added for additional charge. Please talk to your server.";
   e3Price.textContent = "$12.99";
   e3Image.src = skillet;
   e3Image.alt = "Demon Scorchin Skillet";
@@ -189,45 +187,6 @@ export function menu() {
 
   decoration1.classList.add("d1");
   decoration2.classList.add("d2");
-  b1Name.classList.add("nItem");
-  b2Name.classList.add("nItem");
-  s1Name.classList.add("nItem");
-  s2Name.classList.add("nItem");
-  e1Name.classList.add("nItem");
-  e2Name.classList.add("nItem");
-  e3Name.classList.add("nItem");
-  e4Name.classList.add("nItem");
-  e5Name.classList.add("nItem");
-  e6Name.classList.add("nItem");
-  e7Name.classList.add("nItem");
-  e8Name.classList.add("nItem");
-
-  b1Descrip.classList.add("dItem");
-  b2Descrip.classList.add("dItem");
-  s1Descrip.classList.add("dItem");
-  s2Descrip.classList.add("dItem");
-  e1Descrip.classList.add("dItem");
-  e2Descrip.classList.add("dItem");
-  e3Descrip.classList.add("dItem");
-  e4Descrip.classList.add("dItem");
-  e5Descrip.classList.add("dItem");
-  e6Descrip.classList.add("dItem");
-  e7Descrip.classList.add("dItem");
-  e8Descrip.classList.add("dItem");
-
-  b1Price.classList.add("pItem");
-  b2Price.classList.add("pItem");
-  s1Price.classList.add("pItem");
-  s2Price.classList.add("pItem");
-  e1Price.classList.add("pItem");
-  e2Price.classList.add("pItem");
-  e3Price.classList.add("pItem");
-  e4Price.classList.add("pItem");
-  e5Price.classList.add("pItem");
-  e6Price.classList.add("pItem");
-  e7Price.classList.add("pItem");
-  e8Price.classList.add("pItem");
-
   b1Image.classList.add("menuImg");
   b2Image.classList.add("menuImg");
   s1Image.classList.add("menuImg");
@@ -240,7 +199,6 @@ export function menu() {
   e6Image.classList.add("menuImg");
   e7Image.classList.add("menuImg");
   e8Image.classList.add("menuImg");
-
   mTitleOuter.classList.add("outer");
   bTitleOuter.classList.add("outer");
   sTitleOuter.classList.add("outer");
@@ -297,7 +255,6 @@ export function menu() {
   beverages.appendChild(bTitleOuter);
   beverages.appendChild(b1Outer);
   beverages.appendChild(b2Outer);
-
   sTitleInner.appendChild(sideTitle);
   sTitleOuter.appendChild(sTitleInner);
   s1Inner.appendChild(s1Name);
@@ -313,7 +270,6 @@ export function menu() {
   sides.appendChild(sTitleOuter);
   sides.appendChild(s1Outer);
   sides.appendChild(s2Outer);
-
   eTitleInner.appendChild(entréeTitle);
   eTitleOuter.appendChild(eTitleInner);
   e1Inner.appendChild(e1Name);
@@ -356,7 +312,6 @@ export function menu() {
   e8Inner.appendChild(e8Price);
   e8Inner.appendChild(e8Image);
   e8Outer.appendChild(e8Inner);
-
   entrées.appendChild(eTitleOuter);
   entrées.appendChild(e1Outer);
   entrées.appendChild(e2Outer);
@@ -366,10 +321,8 @@ export function menu() {
   entrées.appendChild(e6Outer);
   entrées.appendChild(e7Outer);
   entrées.appendChild(e8Outer);
-
   content.appendChild(mTitleOuter);
   content.appendChild(beverages);
   content.appendChild(sides);
   content.appendChild(entrées);
 }
-//Continue changing element names to outer and inner for titles

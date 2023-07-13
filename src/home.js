@@ -26,7 +26,7 @@ export function home() {
   const locationTitle = document.createElement("h3");
   const address = document.createElement("div");
 
-  homeTitle.textContent = "Home";
+  homeTitle.textContent = "RPG Café";
   decoration1.src = knight;
   decoration1.alt = "knight";
   decoration2.src = knight;
@@ -52,22 +52,11 @@ export function home() {
   decoration2.classList.add("d2");
   reviewOuterContainer.classList.add("outer");
   reviewInnerContainer.classList.add("inner");
-  review.id = "review";
   customer.id = "customer";
   hoursOuterContainer.classList.add("outer");
   hoursInnerContainer.classList.add("inner");
-  hours.id = "hours";
-  monday.classList.add("day");
-  tuesday.classList.add("day");
-  wednesday.classList.add("day");
-  thursday.classList.add("day");
-  friday.classList.add("day");
-  saturday.classList.add("day");
-  sunday.classList.add("day");
   locationOuterContainer.classList.add("outer");
   locationInnerContainer.classList.add("inner");
-  locationTitle.id = "location";
-  address.id = "address";
 
   heading.appendChild(decoration1);
   heading.appendChild(homeTitle);
@@ -88,7 +77,6 @@ export function home() {
   locationInnerContainer.appendChild(locationTitle);
   locationInnerContainer.appendChild(address);
   locationOuterContainer.appendChild(locationInnerContainer);
-
   content.appendChild(headingContainer);
   content.appendChild(reviewOuterContainer);
   content.appendChild(hoursOuterContainer);
